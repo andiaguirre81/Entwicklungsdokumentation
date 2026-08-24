@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0b4d86">
-<meta name="description" content="Anonyme Entwicklungsdokumentation mit Formulierungshilfe für pädagogische Entwicklungsberichte.">
+<meta name="description" content="Entwicklungsbericht-Assistent von Andreas Aguirre – anonyme Entwicklungsdokumentation mit Formulierungshilfe für pädagogische Entwicklungsberichte.">
 <title>Entwicklungsbericht-Assistent</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -18,6 +18,8 @@
 html{scroll-behavior:smooth}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
 main{max-width:900px;margin:auto;padding:14px 14px 110px}
+.brandhead{background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px 14px;margin:4px 0 10px}
+.brandhead img{display:block;width:100%;max-width:630px;height:auto}
 .top{display:flex;align-items:center;gap:12px;padding:8px 0 14px}
 .logo{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--navy2),var(--navy));color:white;display:grid;place-items:center;font-weight:900;font-size:20px}
 .top h1{margin:0;color:var(--navy2);font-size:1.35rem} .top small{display:block;color:var(--muted);margin-top:3px}
@@ -25,6 +27,8 @@ main{max-width:900px;margin:auto;padding:14px 14px 110px}
 .kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:#bdeafb;font-weight:850}
 .hero h2{font-size:1.75rem;line-height:1.08;margin:7px 0 8px} .hero p{margin:0;color:#e8f4fb;line-height:1.45}
 .privacy{margin-top:13px;padding:10px 12px;border:1px solid #ffffff35;border-radius:13px;color:#e8f4fb;font-size:.82rem}
+.byline{margin-top:10px;padding-top:10px;border-top:1px solid #ffffff35;color:#d9effb;font-size:.82rem}
+.byline strong{color:#fff}
 .step{background:#fff;border:1px solid var(--line);border-radius:19px;padding:16px;margin:12px 0}
 .step h3{margin:0 0 10px;color:var(--navy2);font-size:1.07rem}
 label{display:block;font-size:.8rem;font-weight:750;color:#61717f;margin:9px 0 5px}
@@ -56,7 +60,7 @@ textarea{min-height:84px;resize:vertical}
 .report-section p{margin:5px 0;line-height:1.55;color:#283944}
 .edit-box{min-height:320px;line-height:1.55;background:#fbfdfe}
 .notice{font-size:.8rem;line-height:1.45;background:#edf4f8;padding:11px 12px;border-radius:13px;color:#526570;margin:12px 0}
-.footer{text-align:center;color:var(--muted);font-size:.76rem;line-height:1.5;padding:18px 4px}
+.footer{text-align:center;color:var(--muted);font-size:.76rem;line-height:1.6;padding:18px 4px}.footer a{color:var(--navy);font-weight:750;text-decoration:none}
 .hidden{display:none!important}
 @media(max-width:540px){.meta-grid{grid-template-columns:1fr}}
 @media print{
@@ -70,13 +74,20 @@ textarea{min-height:84px;resize:vertical}
 </head>
 <body>
 <main>
-<div class="top"><div class="logo">ED</div><div><h1>Entwicklungsbericht-Assistent</h1><small>Anonyme Beobachtung · 3 Jahre bis Einschulung</small></div></div>
+<div class="brandhead">
+  <img src="andreas-aguirre-logo.png" alt="Andreas Aguirre – Coaching für Kitas & Familienzentren">
+</div>
+<div class="top">
+  <div class="logo">ED</div>
+  <div><h1>Entwicklungsbericht-Assistent</h1><small>Anonyme Beobachtung · 3 Jahre bis Einschulung</small></div>
+</div>
 
 <section class="hero">
 <div class="kicker">Prototyp</div>
 <h2>Beobachten, einordnen, Bericht vorbereiten</h2>
 <p>Altersbezogene Beobachtungspunkte auswählen und daraus einen editierbaren Entwurf für die Entwicklungsdokumentation erstellen.</p>
 <div class="privacy"><strong>🔒 Lokal & anonym:</strong> In diesem Prototyp werden keine Eingaben gespeichert oder an einen Server übertragen. Verwende keine Klarnamen.</div>
+<div class="byline">Ein Praxis-Tool von <strong>Andreas Aguirre</strong> · Aus der Praxis. Für die Praxis.</div>
 </section>
 
 <section class="step" id="setup">
@@ -120,7 +131,12 @@ textarea{min-height:84px;resize:vertical}
 <div class="notice"><strong>Fachlicher Hinweis:</strong> Der erzeugte Text ist ein Formulierungsentwurf aus den ausgewählten Beobachtungen. Er ersetzt keine pädagogische Einschätzung und darf nur Aussagen enthalten, die tatsächlich beobachtet wurden.</div>
 </section>
 
-<footer class="footer">Arbeitsgrundlage: hochgeladene Entwicklungsdokumentation mit den Bereichen Sprache, kognitive Entwicklung, soziale Kompetenz, Feinmotorik und Grobmotorik.</footer>
+<footer class="footer">
+      <strong>Entwicklungsbericht-Assistent · von Andreas Aguirre</strong><br>
+      Aus der Praxis. Für die Praxis.<br>
+      <a href="https://www.andreas-aguirre.de" target="_blank" rel="noopener">www.andreas-aguirre.de</a><br><br>
+      Arbeitsgrundlage: Entwicklungsdokumentation mit den Bereichen Sprache, kognitive Entwicklung, soziale Kompetenz, Feinmotorik und Grobmotorik.
+    </footer>
 </main>
 
 <script>
